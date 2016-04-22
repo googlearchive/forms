@@ -1,0 +1,76 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "HeroFormComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'hero-form'"
+              },
+              {
+                "1": "template",
+                "2": "'Hero form will go here'"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ]
+      }
+    ],
+    "6": "hero_form_component_initial.dart"
+  },
+  "type": {
+    "HeroFormComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "hero-form",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "HeroFormComponent",
+        "moduleUrl": "asset:hero_form/lib/hero_form_component_initial.dart",
+        "prefix": null,
+        "isHost": false,
+        "constConstructor": null,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "Hero form will go here",
+        "templateUrl": "asset:hero_form/lib/hero_form_component_initial.dart",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
