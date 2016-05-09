@@ -13,37 +13,17 @@
     ],
     "5": [
       {
-        "1": "HeroFormComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'hero-form'"
-              },
-              {
-                "1": "templateUrl",
-                "2": "'hero_form_component.html'"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ]
+        "1": "HeroFormComponent"
       }
     ],
     "6": "hero_form_component.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       },
       {
-        "1": "hero.template.dart",
+        "1": "hero.ngfactory.dart",
         "4": "i1"
       }
     ]
@@ -54,13 +34,11 @@
       "name": "_powers",
       "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "HeroFormComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "hero-form",
       "exportAs": null,
       "type": {
@@ -69,7 +47,6 @@
         "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": []
       },
@@ -82,7 +59,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "<div class=\"container\">\n  <div [hidden]=\"submitted\">\n    <h1>Hero Form</h1>\n    <form (ngSubmit)=\"onSubmit()\" #heroForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"name\">Name</label>\n        <input type=\"text\" class=\"form-control\" required\n               [(ngModel)]=\"model.name\"\n               ngControl=\"name\" #name=\"ngForm\" >\n        <div [hidden]=\"name.valid\" class=\"alert alert-danger\">\n          Name is required\n        </div>\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"alterEgo\">Alter Ego</label>\n        <input type=\"text\" class=\"form-control\"\n               [(ngModel)]=\"model.alterEgo\"\n               ngControl=\"alterEgo\" >\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"power\">Hero Power</label>\n        <select class=\"form-control\" required\n                [(ngModel)]=\"model.power\"\n                ngControl=\"power\" >\n          <option *ngFor=\"#p of powers\" [value]=\"p\">{{p}}</option>\n        </select>\n      </div>\n\n      <button type=\"submit\" class=\"btn btn-default\"\n              [disabled]=\"!heroForm.form.valid\">Submit</button>\n    </form>\n  </div>\n\n  <div [hidden]=\"!submitted\">\n    <h2>You submitted the following:</h2>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Name</div>\n      <div class=\"col-xs-9  pull-left\">{{ model.name }}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Alter Ego</div>\n      <div class=\"col-xs-9 pull-left\">{{ model.alterEgo }}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Power</div>\n      <div class=\"col-xs-9 pull-left\">{{ model.power }}</div>\n    </div>\n    <br>\n    <button class=\"btn btn-default\" (click)=\"submitted=false\">Edit</button>\n  </div>\n</div>\n",
+        "template": "<div class=\"container\">\n  <div [hidden]=\"submitted\">\n    <h1>Hero Form</h1>\n    <form (ngSubmit)=\"onSubmit()\" #heroForm=\"ngForm\">\n      <div class=\"form-group\">\n        <label for=\"name\">Name</label>\n        <input type=\"text\" class=\"form-control\" required\n               [(ngModel)]=\"model.name\"\n               ngControl=\"name\" #name=\"ngForm\" >\n        <div [hidden]=\"name.valid\" class=\"alert alert-danger\">\n          Name is required\n        </div>\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"alterEgo\">Alter Ego</label>\n        <input type=\"text\" class=\"form-control\"\n               [(ngModel)]=\"model.alterEgo\"\n               ngControl=\"alterEgo\" >\n      </div>\n\n      <div class=\"form-group\">\n        <label for=\"power\">Hero Power</label>\n        <select class=\"form-control\" required\n                [(ngModel)]=\"model.power\"\n                ngControl=\"power\" >\n          <option *ngFor=\"let p of powers\" [value]=\"p\">{{p}}</option>\n        </select>\n      </div>\n\n      <button type=\"submit\" class=\"btn btn-default\"\n              [disabled]=\"!heroForm.form.valid\">Submit</button>\n    </form>\n  </div>\n\n  <div [hidden]=\"!submitted\">\n    <h2>You submitted the following:</h2>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Name</div>\n      <div class=\"col-xs-9  pull-left\">{{ model.name }}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Alter Ego</div>\n      <div class=\"col-xs-9 pull-left\">{{ model.alterEgo }}</div>\n    </div>\n    <div class=\"row\">\n      <div class=\"col-xs-3\">Power</div>\n      <div class=\"col-xs-9 pull-left\">{{ model.power }}</div>\n    </div>\n    <br>\n    <button class=\"btn btn-default\" (click)=\"submitted=false\">Edit</button>\n  </div>\n</div>\n",
         "templateUrl": "asset:hero_form/lib/hero_form_component.html",
         "styles": [],
         "styleUrls": [],

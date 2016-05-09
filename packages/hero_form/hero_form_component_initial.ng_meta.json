@@ -9,33 +9,13 @@
     ],
     "5": [
       {
-        "1": "HeroFormComponent",
-        "4": [
-          {
-            "1": "Component",
-            "3": [
-              {
-                "1": "selector",
-                "2": "'hero-form'"
-              },
-              {
-                "1": "template",
-                "2": "'Hero form will go here'"
-              }
-            ],
-            "4": false,
-            "5": true,
-            "6": true,
-            "7": true,
-            "8": false
-          }
-        ]
+        "1": "HeroFormComponent"
       }
     ],
     "6": "hero_form_component_initial.dart",
-    "10": [
+    "7": [
       {
-        "1": "package:angular2/core.template.dart",
+        "1": "package:angular2/core.ngfactory.dart",
         "4": "i0"
       }
     ]
@@ -44,7 +24,6 @@
     "HeroFormComponent": {
       "class": "Directive",
       "isComponent": true,
-      "dynamicLoadable": true,
       "selector": "hero-form",
       "exportAs": null,
       "type": {
@@ -53,7 +32,6 @@
         "moduleUrl": "asset:hero_form/lib/hero_form_component_initial.dart",
         "prefix": null,
         "isHost": false,
-        "constConstructor": null,
         "value": null,
         "diDeps": []
       },

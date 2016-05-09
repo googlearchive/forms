@@ -6,7 +6,6 @@
       "name": "Hero",
       "moduleUrl": "asset:hero_form/lib/hero.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     },
     "main": {
@@ -14,7 +13,6 @@
       "name": "main",
       "moduleUrl": "asset:hero_form/lib/hero.dart",
       "prefix": null,
-      "constConstructor": null,
       "value": null
     }
   },
