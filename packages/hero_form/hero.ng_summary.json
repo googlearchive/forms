@@ -7,13 +7,6 @@
       "moduleUrl": "asset:hero_form/lib/hero.dart",
       "prefix": null,
       "value": null
-    },
-    "main": {
-      "class": "Identifier",
-      "name": "main",
-      "moduleUrl": "asset:hero_form/lib/hero.dart",
-      "prefix": null,
-      "value": null
     }
   },
   "alias": {}

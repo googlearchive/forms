@@ -5,25 +5,34 @@
       {
         "1": "package:angular2/core.dart",
         "5": false
+      },
+      {
+        "1": "hero_form_component.dart",
+        "5": false
       }
     ],
     "5": [
       {
-        "1": "HeroFormComponent"
+        "1": "AppComponent",
+        "7": [
+          {
+            "2": "HeroFormComponent"
+          }
+        ]
       }
     ],
-    "6": "hero_form_component_initial.dart"
+    "6": "app_component.dart"
   },
   "type": {
-    "HeroFormComponent": {
+    "AppComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "hero-form",
+      "selector": "my-app",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "HeroFormComponent",
-        "moduleUrl": "asset:hero_form/lib/hero_form_component_initial.dart",
+        "name": "AppComponent",
+        "moduleUrl": "asset:hero_form/lib/app_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -39,8 +48,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "Hero form will go here",
-        "templateUrl": "asset:hero_form/lib/hero_form_component_initial.dart",
+        "template": "<hero-form></hero-form>",
+        "templateUrl": "asset:hero_form/lib/app_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
