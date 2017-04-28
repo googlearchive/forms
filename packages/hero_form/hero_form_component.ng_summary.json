@@ -23,20 +23,6 @@
     "6": "hero_form_component.dart"
   },
   "type": {
-    "_powers": {
-      "class": "Identifier",
-      "name": "_powers",
-      "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
-      "prefix": null,
-      "value": null
-    },
-    "skyDog": {
-      "class": "Identifier",
-      "name": "skyDog",
-      "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
-      "prefix": null,
-      "value": null
-    },
     "HeroFormComponent": {
       "class": "Directive",
       "isComponent": true,
@@ -71,6 +57,20 @@
       "viewProviders": [],
       "queries": [],
       "viewQueries": []
+    },
+    "_powers": {
+      "class": "Identifier",
+      "name": "_powers",
+      "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
+      "prefix": null,
+      "value": null
+    },
+    "skyDog": {
+      "class": "Identifier",
+      "name": "skyDog",
+      "moduleUrl": "asset:hero_form/lib/hero_form_component.dart",
+      "prefix": null,
+      "value": null
     }
   },
   "alias": {}
