@@ -7,7 +7,7 @@
         "5": false
       },
       {
-        "1": "hero_form_component.dart",
+        "1": "src/hero_form_component.dart",
         "5": false
       }
     ],
@@ -28,7 +28,7 @@
         "4": "i0"
       },
       {
-        "1": "hero_form_component.template.dart",
+        "1": "src/hero_form_component.template.dart",
         "4": "i1"
       }
     ]
