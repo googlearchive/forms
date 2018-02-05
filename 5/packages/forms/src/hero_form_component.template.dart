@@ -86,18 +86,17 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
   import2.TableElement _el_31;
   import2.Element _el_32;
   import2.Element _el_33;
-  import2.Element _el_34;
-  import2.Element _el_36;
-  import2.Text _text_37;
+  import2.Element _el_35;
+  import2.Text _text_36;
+  import2.Element _el_37;
   import2.Element _el_38;
-  import2.Element _el_39;
-  import2.Element _el_41;
-  import2.Text _text_42;
+  import2.Element _el_40;
+  import2.Text _text_41;
+  import2.Element _el_42;
   import2.Element _el_43;
-  import2.Element _el_44;
-  import2.Element _el_46;
-  import2.Text _text_47;
-  import2.ButtonElement _el_48;
+  import2.Element _el_45;
+  import2.Text _text_46;
+  import2.ButtonElement _el_47;
   var _expr_0;
   bool _expr_1;
   bool _expr_2;
@@ -212,32 +211,31 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     _el_29.append(_text_30);
     _el_31 = createAndAppend(doc, 'table', _el_28);
     _el_31.className = 'table';
-    _el_32 = createAndAppend(doc, 'tbody', _el_31);
-    _el_33 = createAndAppend(doc, 'tr', _el_32);
-    _el_34 = createAndAppend(doc, 'th', _el_33);
-    import2.Text _text_35 = new import2.Text('Name');
-    _el_34.append(_text_35);
-    _el_36 = createAndAppend(doc, 'td', _el_33);
-    _text_37 = new import2.Text('');
-    _el_36.append(_text_37);
-    _el_38 = createAndAppend(doc, 'tr', _el_32);
-    _el_39 = createAndAppend(doc, 'th', _el_38);
-    import2.Text _text_40 = new import2.Text('Alter Ego');
-    _el_39.append(_text_40);
-    _el_41 = createAndAppend(doc, 'td', _el_38);
-    _text_42 = new import2.Text('');
-    _el_41.append(_text_42);
-    _el_43 = createAndAppend(doc, 'tr', _el_32);
-    _el_44 = createAndAppend(doc, 'th', _el_43);
-    import2.Text _text_45 = new import2.Text('Power');
-    _el_44.append(_text_45);
-    _el_46 = createAndAppend(doc, 'td', _el_43);
-    _text_47 = new import2.Text('');
-    _el_46.append(_text_47);
-    _el_48 = createAndAppend(doc, 'button', _el_28);
-    _el_48.className = 'btn btn-primary';
-    import2.Text _text_49 = new import2.Text('Edit');
-    _el_48.append(_text_49);
+    _el_32 = createAndAppend(doc, 'tr', _el_31);
+    _el_33 = createAndAppend(doc, 'th', _el_32);
+    import2.Text _text_34 = new import2.Text('Name');
+    _el_33.append(_text_34);
+    _el_35 = createAndAppend(doc, 'td', _el_32);
+    _text_36 = new import2.Text('');
+    _el_35.append(_text_36);
+    _el_37 = createAndAppend(doc, 'tr', _el_31);
+    _el_38 = createAndAppend(doc, 'th', _el_37);
+    import2.Text _text_39 = new import2.Text('Alter Ego');
+    _el_38.append(_text_39);
+    _el_40 = createAndAppend(doc, 'td', _el_37);
+    _text_41 = new import2.Text('');
+    _el_40.append(_text_41);
+    _el_42 = createAndAppend(doc, 'tr', _el_31);
+    _el_43 = createAndAppend(doc, 'th', _el_42);
+    import2.Text _text_44 = new import2.Text('Power');
+    _el_43.append(_text_44);
+    _el_45 = createAndAppend(doc, 'td', _el_42);
+    _text_46 = new import2.Text('');
+    _el_45.append(_text_46);
+    _el_47 = createAndAppend(doc, 'button', _el_28);
+    _el_47.className = 'btn btn-primary';
+    import2.Text _text_48 = new import2.Text('Edit');
+    _el_47.append(_text_48);
     import14.appViewUtils.eventManager.addEventListener(_el_4, 'submit', eventHandler1(_NgForm_4_4.onSubmit));
     final subscription_0 = _NgForm_4_4.ngSubmit.listen(eventHandler0(ctx.onSubmit));
     _el_8.addEventListener('input', eventHandler1(_handle_input_8_1));
@@ -250,7 +248,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     _el_18.addEventListener('blur', eventHandler0(_SelectControlValueAccessor_18_6.touchHandler));
     final subscription_3 = _NgControlName_18_8.update.listen(eventHandler1(_handle_ngModelChange_18_0));
     _el_24.addEventListener('click', eventHandler0(ctx.clear));
-    _el_48.addEventListener('click', eventHandler1(_handle_click_48_0));
+    _el_47.addEventListener('click', eventHandler1(_handle_click_47_0));
     init(const [], [subscription_0, subscription_1, subscription_2, subscription_3]);
     return null;
   }
@@ -403,17 +401,17 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     }
     final currVal_15 = import14.interpolate0(_ctx.model.name);
     if (!identical(_expr_15, currVal_15)) {
-      _text_37.text = currVal_15;
+      _text_36.text = currVal_15;
       _expr_15 = currVal_15;
     }
     final currVal_16 = import14.interpolate0(_ctx.model.alterEgo);
     if (!identical(_expr_16, currVal_16)) {
-      _text_42.text = currVal_16;
+      _text_41.text = currVal_16;
       _expr_16 = currVal_16;
     }
     final currVal_17 = import14.interpolate0(_ctx.model.power);
     if (!identical(_expr_17, currVal_17)) {
-      _text_47.text = currVal_17;
+      _text_46.text = currVal_17;
       _expr_17 = currVal_17;
     }
   }
@@ -451,7 +449,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     _SelectControlValueAccessor_18_6.onChange($event.target.value);
   }
 
-  void _handle_click_48_0($event) {
+  void _handle_click_47_0($event) {
     ctx.submitted = false;
   }
 }
