@@ -35,7 +35,6 @@ import 'package:angular/src/core/di/opaque_token.dart' as import19;
 import 'package:angular_forms/src/directives/control_value_accessor.dart' as import20;
 import 'package:angular_forms/src/directives/ng_control.dart' as import21;
 import 'package:angular_forms/src/directives/control_container.dart' as import22;
-import 'package:angular/src/core/linker/element_ref.dart';
 import 'dart:core';
 
 const List<dynamic> styles$HeroFormComponent = const [];
@@ -256,22 +255,16 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     if ((identical(token, const import19.MultiToken('NgValidators')) && (8 == nodeIndex))) {
       return _NgValidators_8_5;
     }
-    if ((identical(token, import4.DefaultValueAccessor) && (8 == nodeIndex))) {
-      return _DefaultValueAccessor_8_6;
-    }
     if ((identical(token, const import19.MultiToken<import20.ControlValueAccessor>('NgValueAccessor')) && (8 == nodeIndex))) {
       return _NgValueAccessor_8_7;
     }
-    if (((identical(token, import6.NgControlName) || identical(token, import21.NgControl)) && (8 == nodeIndex))) {
+    if ((identical(token, import21.NgControl) && (8 == nodeIndex))) {
       return _NgControlName_8_8;
-    }
-    if ((identical(token, import4.DefaultValueAccessor) && (14 == nodeIndex))) {
-      return _DefaultValueAccessor_14_5;
     }
     if ((identical(token, const import19.MultiToken<import20.ControlValueAccessor>('NgValueAccessor')) && (14 == nodeIndex))) {
       return _NgValueAccessor_14_6;
     }
-    if (((identical(token, import6.NgControlName) || identical(token, import21.NgControl)) && (14 == nodeIndex))) {
+    if ((identical(token, import21.NgControl) && (14 == nodeIndex))) {
       return _NgControlName_14_7;
     }
     if ((identical(token, const import19.MultiToken('NgValidators')) && ((18 <= nodeIndex) && (nodeIndex <= 19)))) {
@@ -283,7 +276,7 @@ class ViewHeroFormComponent0 extends AppView<import1.HeroFormComponent> {
     if ((identical(token, const import19.MultiToken<import20.ControlValueAccessor>('NgValueAccessor')) && ((18 <= nodeIndex) && (nodeIndex <= 19)))) {
       return _NgValueAccessor_18_8;
     }
-    if (((identical(token, import6.NgControlName) || identical(token, import21.NgControl)) && ((18 <= nodeIndex) && (nodeIndex <= 19)))) {
+    if ((identical(token, import21.NgControl) && ((18 <= nodeIndex) && (nodeIndex <= 19)))) {
       return _NgControlName_18_9;
     }
     if ((identical(token, import3.NgForm) && ((4 <= nodeIndex) && (nodeIndex <= 27)))) {
@@ -463,19 +456,11 @@ class _ViewHeroFormComponent1 extends AppView<import1.HeroFormComponent> {
   ComponentRef<import1.HeroFormComponent> build() {
     var doc = import2.document;
     _el_0 = doc.createElement('option');
-    _NgSelectOption_0_5 = new import9.NgSelectOption(new ElementRef(_el_0), (parentView as ViewHeroFormComponent0)._SelectControlValueAccessor_18_7);
+    _NgSelectOption_0_5 = new import9.NgSelectOption(_el_0, (parentView as ViewHeroFormComponent0)._SelectControlValueAccessor_18_7);
     _text_1 = new import2.Text('');
     _el_0.append(_text_1);
     init0(_el_0);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import9.NgSelectOption) && ((0 <= nodeIndex) && (nodeIndex <= 1)))) {
-      return _NgSelectOption_0_5;
-    }
-    return notFoundResult;
   }
 
   @override
